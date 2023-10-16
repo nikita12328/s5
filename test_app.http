@@ -1,0 +1,28 @@
+### Создать новую задачу
+POST http://localhost:8000/tasks/
+Content-Type: application/json
+
+{
+  "title": "Test Task",
+  "description": "Test Description",
+  "status": false
+}
+
+### Получить список задач
+GET http://localhost:8000/tasks/
+
+### Получить задачу по идентификатору
+GET http://localhost:8000/tasks/0
+
+### Обновить задачу по идентификатору
+PUT http://localhost:8000/tasks/0
+Content-Type: application/json
+
+{
+  "title": "Updated Task",
+  "description": "Updated Description",
+  "status": true
+}
+
+### Удалить задачу по идентификатору
+DELETE http://localhost:8000/tasks/0
